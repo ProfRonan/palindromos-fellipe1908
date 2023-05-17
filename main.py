@@ -1,9 +1,9 @@
 """Main functions"""
-
 import re
+
 def is_palindrome(string: str) -> bool:
-    h = re.sub(r'[.,"\'-?:!;]', '', string)
-    a = string.lower()
+    h = re.sub(r'[.,"\'-?:!;]', "", string)
+    a = h.lower()
     p = a.split()
     j ="".join(p)
     inverter = ""
