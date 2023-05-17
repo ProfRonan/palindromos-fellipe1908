@@ -1,7 +1,8 @@
 """Main functions"""
 
-
+import re
 def is_palindrome(string: str) -> bool:
+    h = re.sub(r'[.,"\'-?:!;]', '', string)
     a = string.lower()
     p = a.split()
     j ="".join(p)
