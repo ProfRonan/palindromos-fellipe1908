@@ -1,8 +1,7 @@
 """Main functions"""
-import re
+
 
 def is_palindrome(string: str) -> bool:
-    h = re.sub('[a-zA-ZO-9_]', '',string)
     a = string.lower()
     p = a.split()
     j ="".join(p)
@@ -17,4 +16,4 @@ def is_palindrome(string: str) -> bool:
         print("n é um palindromo")
         return False
 if __name__ == '__main__':
-    is_palindrome('oi, mundo!')
+    is_palindrome()
